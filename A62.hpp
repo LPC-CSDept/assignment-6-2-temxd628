@@ -6,12 +6,17 @@ using namespace std;
 
 // complete two functions
 double nthpowerp(int n)
-{
-        // return n_th power number
+{      
+      double res = 1;
+      for (int i = 0; i < n; i++) {
+        res *= 2;
+      }
+      return res;
+
 }
 double nthpowern(int n)
 {
-        // return n_th power number
+        return 1/nthpowerp(-n);
 }
 void printout(double result)
 {
